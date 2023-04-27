@@ -30,6 +30,7 @@ public class Main {
     private ArrayList<Vector3f> center = new ArrayList<>();
     private ArrayList<Sphere> planets = new ArrayList<>();
     Sphere kotak;
+    Sphere bundar;
 
     private ArrayList<Sphere> kepala = new ArrayList<>();
     private ArrayList<Sphere> badan = new ArrayList<>();
