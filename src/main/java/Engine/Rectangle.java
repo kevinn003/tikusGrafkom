@@ -10,8 +10,8 @@ import static org.lwjgl.opengl.GL30.*;
 public class Rectangle extends Object {
     List<Integer> index;
     int ibo;
-    public Rectangle(List<ShaderModuleData> shaderModuleDataList, List<Vector3f> vertices, Vector4f color, List<Integer> index){
-        super(shaderModuleDataList,vertices,color);
+    public Rectangle(List<ShaderModuleData> shaderModuleDataList, List<Vector3f> vertices, Vector4f color, List<Integer> index, List<Float> centerPoint){
+        super(shaderModuleDataList,vertices,color, centerPoint);
         this.index = index;
         ibo = glGenBuffers();
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,ibo);

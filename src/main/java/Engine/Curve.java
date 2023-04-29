@@ -11,8 +11,8 @@ public class Curve extends Object {
     List<Integer> numbers = new ArrayList<>();
     List<Vector3f> curve = new ArrayList<>();
 
-    public Curve(List<ShaderModuleData> shaderModuleDataList, List<Vector3f> vertices, Vector4f color) {
-        super(shaderModuleDataList, vertices, color);
+    public Curve(List<ShaderModuleData> shaderModuleDataList, List<Vector3f> vertices, Vector4f color, List<Float> centerPoint) {
+        super(shaderModuleDataList, vertices, color, centerPoint);
     }
 
     public void createCurve() {
